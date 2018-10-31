@@ -20,6 +20,10 @@ nav {
   display: flex;
 } */
 
+.menu-toggle{
+  display: flex;
+}
+
 
 
 /* TABLET STYLES */
