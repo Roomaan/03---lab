@@ -5,7 +5,20 @@
 
 body {
   background: #fcc;
-} 
+}
+
+.menu {
+  background-color: black;
+  text-align: center;
+  color: white;
+  line-height: 2em;
+}
+nav {
+  display: none;
+}
+/*.menu:hover + nav {
+  display: flex;
+} */
 
 
 
@@ -14,10 +27,31 @@ body {
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
     background: #cfc;
-  } 
+  }
+  nav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    padding: 1.25em 1.5em;
+    color: #ccc;
+    background: #555;
+    text-decoration: none;
+    transition: all 1.5s;
+    display: block;
+  }
+  nav a:hover {
+    color: #dfd;
+    background-color: #111;
+  }
+  .menu {
+    display: none;
+  }
 }
 
 
@@ -30,5 +64,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
